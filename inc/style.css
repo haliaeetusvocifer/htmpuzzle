@@ -1,0 +1,45 @@
+h1 {
+  color: #b9d507;
+  text-align: center;
+}
+
+
+#DiamondPuzzle {
+  margin: 20px auto;
+  width: 450px;
+  background: rgba(20,20,20,0.8);
+  box-shadow: 0px 0px 10px  2px #777;
+  color: #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+#DiamondPuzzleInnerleft{
+  background: #e7931a;
+  width: 200px;
+  float: left;
+  margin-left: 10px;
+  box-shadow: 0px 0px 10px  2px #d0eb6a;
+}
+
+#DiamondPuzzleInnerRight {
+  background: #d0eb6a;
+  width: 200px;
+  float: right;
+  margin-right: 10px;
+  box-shadow: 0px 0px 10px  2px #e7931a;
+}
+.contenedorPieza {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+#DiamondPuzzle img {
+  float: left;
+  padding: 1px;
+  width: 98px;
+  height: 98px;
+}

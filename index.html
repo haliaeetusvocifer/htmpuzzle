@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diamond Bank Chronicles</title>
+
+    <!-- Bootstrap -->
+    <link href="inc/boostrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="inc/bootstrap/css/font-awesome.min.css">
+    <link href="inc/style.css" rel="stylesheet" />  
+</head>
+<body onload="comprobarnavegador();">
+  <header>
+    <h1> Diamond Chronicles </h1>
+  </header>
+
+  <section id="DiamondPuzzle">
+    <div id="DiamondPuzzleInnerleft" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+      <img id="1" src="inc/img/1.png" alt="1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      <img id="2" src="inc/img/2.png" alt="2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      <img id="3" src="inc/img/3.png" alt="3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      <img id="4" src="inc/img/4.png" alt="4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      <img id="5" src="inc/img/5.png" alt="5" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      <img id="6" src="inc/img/6.png" alt="6" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+    </div>
+    <div id="DiamondPuzzleInnerRight">
+      <div class="contenedorPieza" id="one" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      <div class="contenedorPieza" id="two" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      <div class="contenedorPieza" id="three" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      <div class="contenedorPieza" id="four" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      <div class="contenedorPieza" id="five" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      <div class="contenedorPieza" id="six" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+    </div>  
+  </section>
+
+<!-- Boostrap Js -->
+<script src="inc/bootstrap/js/bootstrap.min.js"></script>
+<!-- Puzzle JS-->
+<script src="inc/js/puzzle.js"></script>
+</body>
+</html>
