@@ -27,7 +27,7 @@ function enter(e) {
 * Returns false if the object can be dropped on that element and true otherwise.
 **/
 function over(e) {
-  if ((e.target.className == "contenedorPieza") || (e.target.id == "contenedorPiezas"))
+  if ((e.target.className == "DiamondFinalPuzzle") || (e.target.id == "DiamondPuzzleInnerleft"))
     return false;
   else
   return true;
@@ -44,24 +44,29 @@ function drop(e){
 }
 
 function comprobarPuzzle(){
-  if((document.getElementById('pieza1').parentNode.id=='uno') &&
-    (document.getElementById('pieza2').parentNode.id=='dos') &&
-    (document.getElementById('pieza3').parentNode.id=='tres') &&
-    (document.getElementById('pieza4').parentNode.id=='cuatro'))
+  if((document.getElementById('puzzle1').parentNode.id=='one') &&
+    (document.getElementById('puzzle2').parentNode.id=='two') &&
+    (document.getElementById('puzzle3').parentNode.id=='three') &&
+    (document.getElementById('puzzle4').parentNode.id=='four')&&
+    (document.getElementById('puzzle5').parentNode.id=='five')&&
+    (document.getElementById('puzzle6').parentNode.id=='six'))
   {
-    alert('Felicidades, has hecho el puzzle.');
+    alert('Congratulations, you made the puzzle.');
   }
+  /*else{
+    alert('oops!!!, You failed. try again.');
+  }*/
 }
 
 /**
 * Displays a warning message if the browser does not support Drag & Drop. (In Windows neither IE nor Safari support it)
 **/
-function comprobarnavegador() {
+function checkBrowser() {
   if( 
     (navigator.userAgent.toLowerCase().indexOf('msie ') > -1) || 
     ((navigator.userAgent.toLowerCase().indexOf('safari') > -1) && (navigator.userAgent.toLowerCase().indexOf('chrome') == -1)))
   {
-    alert("Tu navegador no soporta correctamente las funciones Drag & Drop de HTML5. Prueba con otro navegador.");
+    alert("Your browser does not correctly support HTML5 Drag & Drop functions. Try google chrome browser.");
   }
 
 }
